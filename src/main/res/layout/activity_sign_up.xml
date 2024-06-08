@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:id="@+id/reg_linear"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbars="vertical"
+        android:nestedScrollingEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:targetApi="lollipop">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:background="@drawable/top_header_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="168dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.044"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/logo_small" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/create_an_account"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.502">
+
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/textAlready"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/already_have"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.783" />
+
+            <TextView
+                android:id="@+id/TVlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="76dp"
+                android:layout_marginBottom="44dp"
+                android:text="@string/here"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textAlready"
+                app:layout_constraintTop_toTopOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.0" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="2dp"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/progress_back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="0dp"
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="3dp"
+            android:textColorHint="@color/purple_700"
+            android:enabled="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/email"
+            android:hint="@string/email"
+            android:textSize="17sp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_stroke"
+            android:padding="8dp"/>
+
+        <EditText
+            app:passwordToggleEnabled="true"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="3dp"
+            android:textColorHint="@color/purple_700"
+            android:enabled="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/passwd"
+            android:hint="@string/password"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_stroke"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            app:passwordToggleEnabled="true"
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="3dp"
+            android:textColorHint="@color/purple_700"
+            android:enabled="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/confirm_password"
+            android:hint="@string/confirm_pass"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center"
+            android:inputType="textPassword"
+            android:background="@drawable/edit_text_stroke"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnregister"
+            android:textAllCaps="false"
+            android:text="@string/signup"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_login_blue"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_200"
+            android:text="@string/spacer"/>
+
+        <TextView
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_200"
+            android:text="@string/orcontinue"/>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/continue_with_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/twitter" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="240dp"
+                android:background="@drawable/continue_with_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/google" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <!-- TextView for heading
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+
+    <!- Edit text for email
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Email" />
+
+    <!- Edit text for password
+    <EditText
+        android:id="@+id/passwd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Password"
+        android:inputType="textPassword" />
+
+    <!- Button for register with text "Register"
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+
+    <!- ProgressBar for loading time
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+<!- -->
+</LinearLayout>

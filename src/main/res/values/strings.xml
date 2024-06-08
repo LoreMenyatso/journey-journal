@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">JournalJourney</string>
+    <string name="location">Location:</string>
+    <string name="open_map">Open Map</string>
+    <string name="log_out">Logged Out</string>
+    <string name="theme_changed">Theme changed</string>
+    <string name="descrip">Description:</string>
+    <string name="title">Title:</string>
+
+
+    <!-- for login activity-->
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgotpass">Forgot password?</string>
+    <string name="signup">Sign up</string>
+    <string name="spacer">|</string>
+    <string name="orcontinue">Or continue with</string>
+    <string name="remember_me">Remember me</string>
+    <string name="create_an_account">Create an account</string>
+    <string name="confirm_pass">Confirm password</string>
+    <string name="already_have">Already have an account? just sign in </string>
+    <string name="here">here</string>
+    <string name="usrlgn">Login successful</string>
+    <string name="fldlgn">Failed to login</string>
+    <!-- End for the login activity-->
+
+    <!-- for registration activity-->
+    <string name="registration_fail">Please check both your passwords</string>
+    <string name="empty_fields">Please add your credentials</string>
+    <string name="usrRg">Your account has been successfully created</string>
+    <string name="registration_fail2">Failed to create account</string>
+    <!-- End registration activity-->
+
+    <!-- for AddDestination activity-->
+    <string name="save">Save entry</string>
+    <string name="enter_description_here">Enter description here...</string>
+    <string name="enter_your_title_here">Enter your title here</string>
+    <string name="add_location">Add location</string>
+    <string name="add_image">Add image</string>
+    <string name="journey_added">Journey Added...</string>
+    <string name="error">An error has occured</string>
+    <!-- End AddDestination activity-->
+
+    <!-- for EditDestination activity-->
+    <string name="delete">Delete</string>
+    <string name="update">Update</string>
+    <string name="curs_updatd">Updated</string>
+    <string name="fild_to_updat">Failed to update</string>
+    <string name="entry_dltd">Entry deleted</string>
+    <string name="logOutSuccessful">You are logged out...</string>
+    <string name="pls_wait">Please Wait</string>
+    <!-- for EditDestination activity-->
+</resources>

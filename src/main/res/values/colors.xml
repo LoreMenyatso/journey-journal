@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#99BFF9</color>
+    <color name="purple_500">#99BFF9</color>
+    <color name="purple_700">#99BFF9</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Custom colors-->
+    <color name="blue101">#99BFF9</color>
+    <color name="caution101">#FFA826</color>
+    <color name="warning101">#C60505</color>
+    <color name="success101">#13F388</color>
+
+    <!--Theme colors-->
+    <!-- for normal light mode -->
+    <color name="backgroundColorLight">#FCFCFC</color>
+    <!-- for night mode -->
+    <color name="backgroundColorDark">#212121</color>
+    <color name="black_shade_1">#0FFFFFFF</color>
+</resources>

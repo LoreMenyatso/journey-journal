@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:contentPadding="5dp"
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:id="@+id/cardRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/rImageView"
+            android:layout_width="65dp"
+            android:layout_height="66dp"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/rowLay"
+            android:layout_width="324dp"
+            android:layout_height="98dp">
+
+
+            <TextView
+                android:id="@+id/rTitleView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rDescriptionTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="48dp"
+                android:text="TextView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/rLocationTv"
+                android:layout_width="114dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="76dp"
+                android:text="TextView"
+                android:textSize="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/shareImageView"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintBottom_toTopOf="@+id/rLocationTv"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:srcCompat="@drawable/ic_baseline_share_24" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

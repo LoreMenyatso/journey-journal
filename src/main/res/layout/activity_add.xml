@@ -1,0 +1,191 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_marginTop="0dp"
+        android:orientation="vertical"
+        android:id="@+id/reg_linear"
+        android:scrollbarAlwaysDrawHorizontalTrack="true"
+        android:scrollbars="vertical"
+        android:nestedScrollingEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:targetApi="lollipop">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="196dp"
+            android:background="@drawable/top_header_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="55dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="120dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.044"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/logo_small" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Make a new Entry"
+                android:textColor="@color/white"
+                android:textSize="45sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.661">
+
+            </TextView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="vertical">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/progressbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="2dp"
+                    android:indeterminate="true"
+                    android:indeterminateDrawable="@drawable/progress_back"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_marginTop="0dp"
+            android:drawablePadding="3dp"
+            android:textColorHint="@color/purple_700"
+            android:enabled="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/idEdtJourneyName"
+            android:hint="Enter title here"
+            android:textSize="17sp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:background="@drawable/edit_text_stroke"
+            android:padding="8dp"/>
+
+        <EditText
+            app:passwordToggleEnabled="true"
+            android:drawablePadding="3dp"
+            android:textColorHint="@color/purple_700"
+            android:enabled="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/idEdtJourneyDescription"
+            android:hint="Enter description here"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:background="@drawable/edit_text_stroke"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            app:passwordToggleEnabled="true"
+            android:drawablePadding="3dp"
+            android:textColorHint="@color/purple_700"
+            android:enabled="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:id="@+id/idEdtJourneyLocation"
+            android:hint="Enter location here"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center"
+            android:inputType="text"
+            android:background="@drawable/edit_text_stroke"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:id="@+id/btnbrowse"
+            android:textAllCaps="false"
+            android:text="Browse pictures"
+            android:gravity="center"
+            android:textSize="17sp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="50dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_login_blue"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/image_view"
+            android:layout_gravity="center"
+            android:layout_width="150dp"
+            android:layout_height="170dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"
+            android:background="#DCD8D8" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/idBtnSendData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/purple_700"
+            android:src="@drawable/ic_baseline_done_24"
+            app:fabSize="normal"
+            android:layout_gravity="end"
+            app:tint="@color/white" />
+    </LinearLayout>
+</LinearLayout>

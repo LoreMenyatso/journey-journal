@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context=".Login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginBottom="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/logo">
+        </ImageView>
+
+        <EditText
+            android:drawableLeft="@drawable/ic_baseline_email_24"
+            android:drawablePadding="3dp"
+            android:textColorHint="@color/purple_700"
+            android:id="@+id/email"
+            android:hint="@string/email"
+            android:textSize="17sp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_text_stroke"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:drawableLeft="@drawable/ic_baseline_lock_24"
+            android:drawablePadding="3dp"
+            android:textColorHint="@color/purple_700"
+            android:enabled="true"
+            android:id="@+id/password"
+            android:hint="@string/password"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_gravity="center"
+            android:background="@drawable/edit_text_stroke"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:inputType="textPassword"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"/>
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/button_login_blue"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textAllCaps="false"
+            android:text="Login" />
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_height="wrap_content">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressBar"
+                android:layout_centerInParent="true"
+                android:indeterminate="true"
+                android:indeterminateDrawable="@drawable/progress_back"
+                android:visibility="gone"/>
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                app:buttonTint="@color/purple_200"
+                android:id="@+id/check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:textColor="@color/purple_200"
+                android:text="@string/remember_me">
+
+            </com.google.android.material.checkbox.MaterialCheckBox>
+
+
+            <TextView
+                android:id="@+id/forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:text="@string/forgotpass"
+                android:textColor="@color/caution101"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/idRegister"
+            android:text="@string/signup"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginEnd="25dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/purple_200"
+            android:layout_gravity="center"
+            android:background="@drawable/button_sign_up_white"
+            android:layout_width="match_parent"
+            android:padding="8dp"
+            android:layout_height="45dp"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_200"
+            android:text="@string/spacer"/>
+
+        <TextView
+            android:textSize="15dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/purple_200"
+            android:text="@string/orcontinue"/>
+
+        <RelativeLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="25dp"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/continue_with_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="57dp"
+                    android:layout_height="57dp"
+                    android:src="@drawable/twitter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="240dp"
+                android:background="@drawable/continue_with_background"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/google" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <!-- TextView for heading
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Email" />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Password"
+        android:inputType="textPassword" />
+
+    <Button
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register" />
+
+    <!-
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+ProgressBar for Loading Time -->
+
+</androidx.appcompat.widget.LinearLayoutCompat>
